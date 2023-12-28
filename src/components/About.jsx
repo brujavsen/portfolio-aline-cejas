@@ -4,7 +4,7 @@ const About = () => {
       <article className="about">
         <img
           className="about__banner"
-          src="/public/banner-about.png"
+          src="./banner-about.png"
           alt="banner-about-me"
         />
         <div className="about__info">
