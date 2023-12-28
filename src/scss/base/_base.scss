@@ -1,0 +1,40 @@
+@use '../abstracts/variables' as v;
+
+body {
+    font-size: 1.6rem;
+    font-family: v.$font;
+    min-height: 100vh;
+}
+.container {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.components article {
+    width: 100%;
+    height: 100%;
+    background-color: lightcoral;
+    border: 1px solid black;
+}
+
+hr {
+    width: 90%;
+    border: 1px solid #eee;
+}
+h2 {
+    padding: 2rem;
+    font-size: 3.5rem;
+}
+
+.flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.rights {
+    text-align: center;
+}

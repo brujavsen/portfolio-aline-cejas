@@ -1,0 +1,15 @@
+/* abstracts */
+@use './scss/abstracts/normalize';
+@use './scss/abstracts/variables';
+@use './scss/abstracts/mixins';
+
+/* Base */
+@use './scss/base/base';
+@use './scss/base/resets';
+
+/* Layout */
+@use './scss/layout/header';
+@use './scss/layout/about';
+@use './scss/layout/skills';
+@use './scss/layout/proyects';
+@use './scss/layout/contact';

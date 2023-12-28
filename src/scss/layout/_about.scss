@@ -1,0 +1,24 @@
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as m;
+
+.about {
+    img {
+        height: 500px;
+        object-fit: cover;
+    }
+    .about__info {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: 90%;
+        height: 500px;
+        margin: 0 auto;
+        text-align: center;
+        
+        p {
+            padding: 2rem;
+            font-size: 2rem;
+        }
+    }
+}
