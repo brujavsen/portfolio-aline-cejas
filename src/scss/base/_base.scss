@@ -26,6 +26,11 @@ hr {
 h2 {
     padding: 2rem;
     font-size: 3.5rem;
+    border-bottom: 1px solid #a3a2a2;
+
+    @media screen and (max-width: 768px) {
+        font-size: 2.8rem;
+    }
 }
 
 .flex {
@@ -36,5 +41,12 @@ h2 {
 }
 
 .rights {
-    text-align: center;
+    width: 90%;
+    margin: 0 auto;
+    align-self: baseline;
+    padding: 2rem 0;
+
+    a {
+        color: crimson;
+    }
 }

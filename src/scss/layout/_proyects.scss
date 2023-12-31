@@ -3,4 +3,11 @@
 
 .proyects {
     height: 500px;
+
+    img {
+        margin: 5rem 0;
+        height: 200px;
+        width: 100%;
+        object-fit: cover;
+    }
 }

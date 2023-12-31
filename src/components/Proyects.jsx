@@ -3,6 +3,7 @@ const Proyects = () => {
     <>
         <article className='proyects flex'>
           <h2 id="proyects">Projetos</h2>
+          <img src="./gatico.jpg" alt="gato" />
         </article>
     </>
   )
