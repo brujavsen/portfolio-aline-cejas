@@ -2,9 +2,18 @@
 @use '../abstracts/mixins' as m;
 
 .about {
-    img {
-        height: 500px;
-        object-fit: cover;
+    h1 {
+        font-size: 3rem;
+        text-align: center;
+        color: v.$second-c;
+        span {
+            color: v.$primary-c;
+        }
+        font-weight: 700;
+
+        @include m.tablet {
+            font-size: 5rem;
+        }
     }
     .about__info {
         display: flex;
@@ -14,36 +23,23 @@
         width: 90%;
         height: 580px;
         margin: 0 auto;
-        text-align: center;
-        .intro {
-            width: inherit;
-            text-align: left;
-            display: flex;
-            flex-direction: column;
-            justify-content: baseline;
-            align-items: baseline;
-            margin: 3rem 0;
-            p {
-                padding: 0;
-                color: rgb(107, 16, 164);
-                font-weight: 700;
-            }
-            span {
-                color: rgb(107, 16, 164);
-            }
-        }
+        color: #33186B;
         p {
             padding: 2rem;
-            font-size: 2rem;
+            font-size: 1.5rem;
+            text-align: center;
+            @include m.tablet {
+                font-size: 2rem;
+            }
         }
-        .btns {
+        .btn {
             display: flex;
             a {
                 font-size: 1.5rem;
                 font-weight: 600;
                 padding: 1rem 3rem;
                 margin: 3rem 2rem 0 2rem;
-                background-color: rgb(107, 16, 164);
+                background-color: v.$p-color;
                 color: white;
 
                 @media screen and (max-width: 768px) {
@@ -51,5 +47,14 @@
                 }
             }
         }
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
     }
 }

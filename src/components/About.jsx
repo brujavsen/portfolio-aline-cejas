@@ -1,27 +1,42 @@
+import swal from "sweetalert";
+
 const About = () => {
+
+  const cv = "/cv-aline.pdf";
+
+  const handleClick = (e) => {
+    e.preventDefault();
+      swal({
+          title: "Deseja continuar?",
+          text: "Você será redirecionado para meu currículo.",
+          icon: "warning",
+          buttons: true,
+      }).then((willRedirect) => {
+          if (willRedirect) {
+              window.location.href = cv;
+          } else {
+              swal("Você cancelou");
+          }
+      });
+  };
+
   return (
     <>
       <article className="about">
-        <img
-          className="about__banner"
-          src="./banner-about.png"
-          alt="banner-about-me"
-        />
         <div className="about__info">
-          <h2>Sobre mim</h2>
-          <div className="intro">
-            <p>Aline Custódio Cejas</p>
-            <span>Graphic Designer</span>
-          </div>
+          <h1>Oi! Meu nome é <span>Aline Custódio Cejas</span></h1>
           <p>
-            Possuo um grande interesse pela área de Design Gráfico e me envolvo
-            por inteiro em cada processo. Busco sempre desenvolver novas
-            habilidades e trazer ideias inovadoras para cada um dos meus
-            projetos
+            Sou aficionada por tudo que envolva
+            design e arte, me entrego em cada
+            projeto e busco sempre inovar em
+            todos. <br />
+            Criatividade não é um problema para
+            mim, pois mesmo se às vezes não a
+            tenho facilmente, procuro sempre
+            alternativas para estimulá-la!
           </p>
-          <div className="btns">
-            <a href="https://www.youtube.com/watch?v=DCkJ5lGPqFs">Meu Currículo</a>
-            <a href="https://www.youtube.com/watch?v=s9oQRKsROF8">Meus Projetos</a>
+          <div className="btn">
+            <a href={cv} onClick={handleClick}>Meu Currículo</a>
           </div>
         </div>
       </article>

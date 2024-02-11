@@ -2,7 +2,7 @@
 @use '../abstracts/mixins' as m;
 
 .contact {
-    height: 300px;
+    height: 500px;
     .social {
         display: flex;
         justify-content: center;
@@ -21,6 +21,10 @@
         svg {
             margin-right: 1rem;
         }
+        @media screen and (max-width: 768px) {
+            margin: .8rem 0;
+            font-size: 1.8rem;
+        }
     }
     p {
         display: flex;
@@ -29,6 +33,10 @@
         padding: 0 3rem;
         svg {
             margin-right: 1rem;
+        }
+        @media screen and (max-width: 768px) {
+            margin: .8rem 0;
+            font-size: 1.8rem;
         }
     }
 }

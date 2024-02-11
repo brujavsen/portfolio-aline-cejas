@@ -2,12 +2,73 @@
 @use '../abstracts/mixins' as m;
 
 .proyects {
-    height: 500px;
+    height: fit-content;
+    margin: 10rem 0;
+    .nav-py {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        margin: 4rem 0;
+        font-size: 2rem;
+        
+        @include m.tablet {
+            flex-direction: row;
+        }
 
-    img {
-        margin: 5rem 0;
-        height: 200px;
-        width: 100%;
-        object-fit: cover;
+        button {
+            margin: 0 2rem;
+            padding: 1rem;
+            cursor: pointer;
+
+            &:hover {
+                border-bottom: 2px solid v.$second-c;
+                color: v.$second-c;
+            }
+        }
+        .active {
+            border-bottom: 2px solid v.$second-c;
+            color: v.$second-c;
+        }
+    }
+    .proyect-cnt {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 2rem;
+
+        @include m.tablet {
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .card {
+            border: 1px solid #eee;
+            border-radius: 8px;
+            padding: 16px;
+            width: 90%;
+            height: fit-content;
+            margin: 2rem auto;
+
+            @include m.tablet {
+                width: 80%;
+            }
+            h3 {
+                text-align: center;
+                color: v.$primary-c;
+                padding: .5rem;
+                margin: 2rem 0;
+                border-radius: 2rem;
+                font-size: 2rem;
+                @include m.tablet {
+                    font-size: 2.5rem;
+                }
+            }
+            p {
+                margin: 2rem 0;
+                text-align: center;
+                font-size: 1.5rem;
+                @include m.tablet {
+                    font-size: 1.8rem;
+                }
+            }
+        }
     }
 }

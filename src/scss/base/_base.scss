@@ -1,4 +1,5 @@
 @use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as m;
 
 body {
     font-size: 1.6rem;
@@ -21,12 +22,14 @@ body {
 
 hr {
     width: 90%;
-    border: 1px solid #eee;
+    border: 2px solid v.$primary-c;
 }
 h2 {
     padding: 2rem;
+    margin: 2rem 0 5rem 0;
     font-size: 3.5rem;
     border-bottom: 1px solid #a3a2a2;
+    color: v.$second-c;
 
     @media screen and (max-width: 768px) {
         font-size: 2.8rem;
@@ -49,4 +52,29 @@ h2 {
     a {
         color: crimson;
     }
+}
+
+//SCROLL FIRST ELEMENT
+// SCROLL TOP
+.scroll-to-top {
+    z-index: 50;
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    cursor: pointer;
+    background-color: v.$primary-c;
+    color: v.$white;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    transition: background-color 0.3s ease;
+}
+
+.scroll-to-top:hover {
+    background-color: v.$second-c;
+    color: v.$white;
+}
+
+.scroll-active {
+    display: block !important;
 }
