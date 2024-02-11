@@ -24,6 +24,10 @@ const Header = () => {
         };
     },[]);
 
+    const closeMenu = () => {
+        setActiveBtn(false);
+    };
+
     const scrollToTop = () => {
         scroll.scrollToTop();
     }
@@ -41,9 +45,9 @@ const Header = () => {
                 <IoMdClose id="close-icon"/>
             </label>
             <nav className="nav">
-                <a href="#skills">Habilidades</a>
-                <a href="#proyects">Projetos</a>
-                <a href="#contact">Contato</a>
+                <a href="#skills" onClick={closeMenu}>Habilidades</a>
+                <a href="#proyects" onClick={closeMenu}>Projetos</a>
+                <a href="#contact" onClick={closeMenu}>Contato</a>
             </nav>
             
             {activeBtn ? (

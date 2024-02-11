@@ -4,7 +4,8 @@
             "id": 0,
             "name": "LOGOTIPO AÇAQUI",
             "desc": "Logotipo criada para um trabalho acadêmico do 5º semestre para a criação de um aplicativo de vendas de açaí.",
-            "img": "proyects/py-1.png"
+            "img": "proyects/py-1.png",
+            "img2": "proyects/py-23.jpg"
         },
         {
             "id": 1,
@@ -21,39 +22,35 @@
         },
         {
             "id": 1,
-            "img": "proyects/py-9.png"
-        },
-        {
-            "id": 2,
-            "img": "proyects/py-6.png"
-        },
-        {
-            "id": 3,
-            "img": "proyects/py-8.png"
-        },
-        {
-            "id": 4,
-            "img": "proyects/py-10.png"
-        },
-        {
-            "id": 5,
             "img": "proyects/py-7.png"
         },
         {
-            "id": 6,
+            "id": 2,
+            "img": "proyects/py-10.png"
+        },
+        {
+            "id": 3,
             "desc": "Um dos meios de divulgação das camisetas do Círio que fiz para venda, a partir do Cartaz do Círio de Nazaré.",
             "img": "proyects/py-11.png"
         },
         {
-            "id": 7,
+            "id": 4,
+            "img": "proyects/py-6.png"
+        },
+        {
+            "id": 5,
+            "img": "proyects/py-8.png"
+        },
+        {
+            "id": 6,
             "img": "proyects/py-17.png"
         },
         {
-            "id": 8,
+            "id": 7,
             "img": "proyects/py-12.png"
         },
         {
-            "id": 9,
+            "id": 8,
             "img": "proyects/py-22.png"
         }
     ],
@@ -62,31 +59,31 @@
             "id": 0,
             "name": "CARTAZ DO POEMA IGREJINHA",
             "desc": "Meu primeiro cartaz, foi nesse trabalho acadêmico do 3º semestre que eu descobri minha grande paixão pela ilustração. Esse cartaz representa um poema de Paulo Nunes - poeta e professor - chamado Igrejinha do livro “O mosquito qu’engoliu o boi”.",
-            "img": "proyects/py-4.png"
+            "img": "proyects/py-4.jpg"
         },
         {
             "id": 1,
             "name": "CARTAZ DO CÍRIO DE NAZARÉ",
             "desc": "Esse cartaz foi criado por mim para um trabalho acadêmico do 4º semestre. No Círio de Nazaré de 2023 eu vendi camisas estampadas com esse cartaz.",
-            "img": "proyects/py-21.png"
+            "img": "proyects/py-21.jpg"
         },
         {
             "id": 2,
             "name": "CARTAZ RAÍZES E PIGMENTOS",
             "desc": "Esse cartaz foi criado por mim para um trabalho acadêmico do 6º semestre. Ele foi um dos cartazes expostos em uma exposição organizada pelo professor da disciplina. É um cartaz cheio de significado.",
-            "img": "proyects/py-2.png"
+            "img": "proyects/py-2.jpg"
         },
         {
             "id": 3,
-            "name": "ESTAMPA PINGUIM HOLMES",
-            "desc": "Um projeto meu com a proposta de ser uma estampa para camisetas. Foi criado em 2023 e é um dos meus projetos favoritos até então",
-            "img": "proyects/py-15.png"
+            "name": "ILUSTRAÇÃO DE CASAIS",
+            "desc": "Um projeto meu com a proposta de ser uma estampa para duas canecas que se unem, ademais pode ser também emoldurado como uma única ilustração. Criado em 2023, foi um presente especial para um casal conhecido meu.",
+            "img": "proyects/py-18.png"
         },
         {
             "id": 4,
-            "name": "ILUSTRAÇÃO PARA ESTAMPARIA DE CANECAS",
-            "desc": "Um projeto meu com a proposta de ser uma estampa para duas canecas que se unem, ademais pode ser também emoldurado como uma única ilustração. Criado em 2023, foi um presente especial para um casal conhecido meu.",
-            "img": "proyects/py-18.png"
+            "name": "ESTAMPA PINGUIM HOLMES",
+            "desc": "Um projeto meu com a proposta de ser uma estampa para camisetas. Foi criado em 2023 e é um dos meus projetos favoritos até então",
+            "img": "proyects/py-15.png"
         },
         {
             "id": 5,

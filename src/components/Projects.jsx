@@ -47,9 +47,9 @@ const Projects = () => {
           <nav className="nav-py">
             <button className={actualProject === 'logotipo' && 'active'} onClick={()=> changePy('logotipo')}>Logotipos</button>
             <button className={actualProject === 'posts' && 'active'} onClick={()=> changePy('posts')}>Posts redes sociais</button>
-            <button className={actualProject === 'designs' && 'active'} onClick={()=> changePy('designs')}>Cartaz e desenhos</button>
+            <button className={actualProject === 'designs' && 'active'} onClick={()=> changePy('designs')}>Ilustrações</button>
           </nav>
-          <section className="proyect-cnt">
+          <section className={`proyect-cnt ${actualProject === 'logotipo' ? 'logo-grid' : actualProject === 'posts' ? 'post-grid' : "grid-design"}`}>
             {actualProject === 'logotipo' && data.logotipo && <ProjectsApi projects={data.logotipo} />}
             {actualProject === 'posts' && data.posts && <ProjectsApi projects={data.posts} />}
             {actualProject === 'designs' && data.posts && <ProjectsApi projects={data.designs} />}

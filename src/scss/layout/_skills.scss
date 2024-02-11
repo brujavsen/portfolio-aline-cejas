@@ -6,43 +6,65 @@
     margin: 10rem 0;
     h2 {
         text-align: center;
+        width: fit-content;
+        margin: 5rem auto;
     }
-    hr {
-        border: 1px solid v.$p-color;
-    }
-    section {
-        width: 100%;
-        text-align: center;
-        h3 {
-            color: v.$p-color;
-            margin-bottom: 2rem;
-            font-size: 2rem;
-            @include m.tablet {
-                font-size: 2.5rem;
-            }
+    .flex {
+        display: flex;
+        flex-direction: column;
+        @include m.desktopXL {
+            flex-direction: row;
         }
-        margin: 3.5rem;
-        ul {
-            display: grid;
-            grid-template-columns: repeat(2, 1fr);
-            @media screen and (max-width: 560px) {
-                grid-template-columns: repeat(1, 1fr);
+        section {
+            margin: 0;
+            background: linear-gradient(117deg, rgba(67,4,113,1) 28%, rgba(155,50,240,1) 100%);
+            height: fit-content;
+            @include m.desktop {
+                height: 320px;
             }
-            li {
-                display: flex;
-                justify-content: center;
+            width: 100%;
+            padding: 2rem;
+            border-radius: 2rem;
+            color: v.$white;
+            text-align: center;
+            transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
+            &:hover {
+                transform: translateY(-25px);
+                box-shadow: 30px 30px 20px #610C9F;
+                background: linear-gradient(117deg, rgba(155,50,240,1) 28%, rgba(67,4,113,1) 100%);
+            }
+            h3 {
+                color: v.$white;
+                margin-bottom: 2rem;
+                font-size: 2rem;
                 @include m.tablet {
-                    justify-content: start;
+                    font-size: 2.5rem;
                 }
-                align-items: center;
-                padding: 2rem;
-                font-size: 1.7rem;
-                svg {
-                    margin-right: 2rem;
-                    font-size: 3rem;
+            }
+            margin: 1rem;
+            ul {
+                display: grid;
+                grid-template-columns: repeat(2, 1fr);
+                @media screen and (max-width: 560px) {
+                    grid-template-columns: repeat(1, 1fr);
                 }
-                @include m.tablet {
-                    font-size: 2rem;
+                li {
+                    border-left: 1px solid v.$white;
+                    display: flex;
+                    justify-content: center;
+                    @include m.tablet {
+                        justify-content: start;
+                    }
+                    align-items: center;
+                    padding: 2rem;
+                    font-size: 1.7rem;
+                    svg {
+                        margin-right: 2rem;
+                        font-size: 3rem;
+                    }
+                    @include m.tablet {
+                        font-size: 2rem;
+                    }
                 }
             }
         }

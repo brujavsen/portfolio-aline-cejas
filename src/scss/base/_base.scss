@@ -62,19 +62,22 @@ h2 {
     bottom: 30px;
     right: 30px;
     cursor: pointer;
-    background-color: v.$primary-c;
+    background: linear-gradient(117deg, rgba(220,240,22,1) 0%, rgba(155,50,240,1) 40%, rgba(67,4,113,1) 71%, rgba(171,98,228,1) 100%);
+    background-size: 400% 400%;
     color: v.$white;
     width: 40px;
     height: 40px;
     border-radius: 50%;
     transition: background-color 0.3s ease;
-}
-
-.scroll-to-top:hover {
-    background-color: v.$second-c;
-    color: v.$white;
+    animation: changeColor 3s linear infinite;
 }
 
 .scroll-active {
     display: block !important;
+}
+
+@keyframes changeColor {
+    0% {background-position: 0 50%;}
+    50% {background-position: 100% 50%;}
+    100% {background-position: 0 50%;}
 }

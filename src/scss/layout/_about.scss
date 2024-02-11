@@ -26,7 +26,7 @@
         color: #33186B;
         p {
             padding: 2rem;
-            font-size: 1.5rem;
+            font-size: 1.8rem;
             text-align: center;
             @include m.tablet {
                 font-size: 2rem;
@@ -39,8 +39,14 @@
                 font-weight: 600;
                 padding: 1rem 3rem;
                 margin: 3rem 2rem 0 2rem;
-                background-color: v.$p-color;
-                color: white;
+                background-color: v.$second-c;
+                border-radius: 20rem;
+                color: v.$white;
+                transition: all .3s cubic-bezier(0.19, 1, 0.22, 1);
+                &:hover {
+                    transform: translateY(-10px);
+                    background-color: v.$primary-c;
+                }
 
                 @media screen and (max-width: 768px) {
                     font-size: 1.3rem;

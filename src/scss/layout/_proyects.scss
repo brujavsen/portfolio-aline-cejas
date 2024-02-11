@@ -28,27 +28,50 @@
         .active {
             border-bottom: 2px solid v.$second-c;
             color: v.$second-c;
+            font-weight: 600;
         }
     }
     .proyect-cnt {
+        width: 90%;
         display: grid;
-        grid-template-columns: repeat(1, 1fr);
-        gap: 2rem;
-
-        @include m.tablet {
-            grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+        &.logo-grid {
+            @include m.tablet {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            grid-template-columns: repeat(1, 1fr);
+        }
+        &.post-grid {
+            @include m.tablet {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            grid-template-columns: repeat(1, 1fr);
+        }
+        &.grid-design {
+            @include m.desktop {
+                grid-template-columns: repeat(2, 1fr);
+            }
+            @include m.desktopXL {
+                grid-template-columns: repeat(3, 1fr);
+            }
+            grid-template-columns: repeat(1, 1fr);
         }
 
         .card {
-            border: 1px solid #eee;
+            border: 1px solid v.$primary-c;
             border-radius: 8px;
-            padding: 16px;
+            padding: 5px;
             width: 90%;
             height: fit-content;
-            margin: 2rem auto;
-
+            margin: .5rem auto;
             @include m.tablet {
-                width: 50%;
+                width: 100%;
+            }
+            .img-cnt {
+                .img-py {
+                    width: 100%;
+                    height: auto;
+                }
             }
             h3 {
                 text-align: center;
