@@ -41,19 +41,19 @@
         },
         {
             "id": 6,
-            "img": "proyects/py-17.png"
-        },
-        {
-            "id": 7,
-            "img": "proyects/py-12.png"
-        },
-        {
-            "id": 8,
             "desc": "Um dos meios de divulgação das camisetas do Círio que fiz para venda, a partir do Cartaz do Círio de Nazaré.",
             "img": "proyects/py-11.png"
         },
         {
+            "id": 7,
+            "img": "proyects/py-17.png"
+        },
+        {
             "id": 8,
+            "img": "proyects/py-12.png"
+        },
+        {
+            "id": 9,
             "img": "proyects/py-22.png"
         }
     ],

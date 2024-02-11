@@ -24,7 +24,7 @@ const About = () => {
     <>
       <article className="about">
         <div className="about__info">
-          <h1>Oi! Meu nome é <span>Aline Custódio Cejas</span></h1>
+          <h1>Oi! Meu nome é <span>Aline Cejas</span></h1>
           <p>
             Sou aficionada por tudo que envolva
             design e arte, me entrego em cada

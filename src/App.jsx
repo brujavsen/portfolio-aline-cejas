@@ -20,7 +20,7 @@ function App() {
       <hr />
       <Contact/>
       <hr />
-      <p className='rights'>Website created by <a href="https://github.com/brujavsen" target='_blank' rel='noreferrer'>Bruno</a>, all rights reserved. &copy; {year}</p>
+      <p className='rights'>Website created by <a href="https://github.com/brujavsen/portfolio-aline-cejas" target='_blank' rel='noreferrer'>Bruno</a>, all rights reserved. &copy; {year}</p>
     </div>
   )
 }
