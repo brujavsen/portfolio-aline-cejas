@@ -29,8 +29,8 @@
             text-align: center;
             transition: all 1s cubic-bezier(0.19, 1, 0.22, 1);
             &:hover {
-                transform: translateY(-25px);
-                box-shadow: 30px 30px 20px #610C9F;
+                transform: translateY(-10px);
+                box-shadow: 15px 15px 20px #610C9F;
                 background: linear-gradient(117deg, rgba(155,50,240,1) 28%, rgba(67,4,113,1) 100%);
             }
             h3 {
