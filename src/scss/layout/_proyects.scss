@@ -16,9 +16,12 @@
         }
 
         button {
-            margin: 0 2rem;
-            padding: 1rem;
             cursor: pointer;
+            margin: 2rem;
+            padding: 1rem;
+            @include m.desktop {
+                margin: 0 2rem;
+            }
 
             &:hover {
                 border-bottom: 2px solid v.$second-c;

@@ -10,9 +10,9 @@ const Skills = () => {
           <section>
             <h3>Software</h3>
             <ul>
-              <li><SiAdobeillustrator />Adobe Illustrator</li>
-              <li><SiAdobephotoshop />Adobe Photoshop</li>
-              <li><SiAdobeindesign />Adobe InDesign</li>
+              <li><SiAdobeillustrator />Illustrator</li>
+              <li><SiAdobephotoshop />Photoshop</li>
+              <li><SiAdobeindesign />InDesign</li>
               <li><SiCanva />Canva</li>
               <li><IoLogoFigma />Figma</li>
             </ul>
