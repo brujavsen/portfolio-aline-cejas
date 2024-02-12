@@ -25,7 +25,7 @@ const Header = () => {
     },[]);
 
     const closeMenu = () => {
-        setActiveBtn(false);
+        document.querySelector('#check').checked = false;
     };
 
     const scrollToTop = () => {
