@@ -31,7 +31,6 @@ function App() {
     <div className='container'>
       <Header/>
       <About/>
-      <hr />
       <Skills/>
       <hr />
       <Projects/>
