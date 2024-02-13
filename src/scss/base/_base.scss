@@ -81,3 +81,65 @@ h2 {
     50% {background-position: 100% 50%;}
     100% {background-position: 0 50%;}
 }
+
+
+// Dark mode
+#check-dark {
+    position: fixed;
+    cursor: pointer;
+    height: 3.8rem;
+    width: 3.8rem;
+    bottom: 0px;
+    top: 180px;
+    bottom: 0;
+    left: 0;
+    right: auto;
+    opacity: 0;
+    outline: none;
+    z-index: 2;
+    @include m.tablet {
+        position: absolute;
+        top: 95px;
+        left: auto;
+    }
+}
+.icon-dark {
+    background-color: v.$p-color;
+    color: v.$white;
+    position: fixed;
+    cursor: pointer;
+    font-size: 3rem;
+    top: 180px;
+    bottom: 0;
+    left: 0;
+    right: auto;
+    display: grid;
+    place-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 0 50% 50% 0;
+    transition: background-color 1s cubic-bezier(0.19, 1, 0.22, 1);
+    z-index: 1;
+    @include m.tablet {
+        position: absolute;
+        right: auto;
+        bottom: auto;
+        top: 0;
+        left: auto;
+        font-size: 3.2rem;
+        border-radius: 0 0 50% 50%;
+    }
+}
+#light-icon {
+    display: none;
+}
+#check-dark:checked~.icon-dark #dark-icon {
+    display: none;
+}
+#check-dark:checked~.icon-dark #light-icon {
+    display: block;
+}
+#check-dark:checked~.icon-dark {
+    background-color: v.$light;
+    color: v.$second-dark;
+}

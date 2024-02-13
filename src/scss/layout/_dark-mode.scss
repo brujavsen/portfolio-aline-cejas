@@ -1,0 +1,105 @@
+@use '../abstracts/variables' as v;
+@use '../abstracts/mixins' as m;
+
+.dark {
+    h2 {
+        border-bottom: 1px solid v.$light;
+        color: v.$light;
+    }
+    background-color: v.$primary-dark;
+    transition: all .5s ease-in-out;
+    // Header section
+    .header {
+        background-color: v.$primary-dark;
+        transition: all .5s ease-in-out;
+        .logo {
+            p {
+                color: v.$p-color;
+            }
+            span {
+                color: v.$light;
+            }
+        }
+        .nav {
+            a {
+                border-right: 1px solid v.$p-color;
+                color: v.$light;
+                @media screen and (max-width: 768px) {
+                    color: v.$light;
+                    border-right: none;
+                }
+                &:last-child {
+                    border-right: none;
+                }
+            }
+        }
+    
+        .icons {
+            color: v.$white;
+        }
+    }
+
+    // about section
+    .about {
+        h1 {
+            color: v.$light;
+        }
+        .about__info {
+            .btn {
+                a {
+                    background-color: v.$second-dark;
+                }
+            }
+        }
+    }
+
+    //Proyect skills
+    .proyects {
+        .nav-py {
+            button {
+                color: v.$light;
+                &:hover {
+                    border-bottom: 2px solid v.$p-color;
+                    color: v.$p-color;
+                }
+            }
+            .active {
+                border-bottom: 2px solid v.$p-color;
+                color: v.$p-color;
+                font-weight: 600;
+            }
+        }
+        .proyect-cnt {
+            .card {
+                border: 1px solid v.$light;
+                h3 {
+                    color: v.$light;
+                }
+                .img-cnt {
+                    filter: brightness(80%);
+                }
+                p {
+                    color: v.$light;
+                }
+            }
+        }
+    }
+
+    // Contact section
+    .contact {
+        a {
+            color: v.$light;
+        }
+        p {
+            color: v.$light;
+        }
+    }
+
+    // rights section
+    .rights {
+        color: v.$p-color;
+        a {
+            color: v.$light;
+        }
+    }
+}

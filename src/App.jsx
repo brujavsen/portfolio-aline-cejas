@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Projects from './components/Projects';
 import Skills from './components/Skills';
 import swal from 'sweetalert';
+import { LuMoon, LuSunMoon  } from "react-icons/lu";
 
 function App() {
 
@@ -25,10 +26,19 @@ function App() {
     });
   };
 
+  const handleDarkMode = (e) => {
+    e.target.parentNode.classList.toggle('dark');
+  };
+
   const year = new Date().getFullYear();
 
   return (
     <div className='container'>
+      <input type="checkbox" id="check-dark" onClick={e => handleDarkMode(e)}/>
+      <label htmlFor="check-dark" className="icon-dark">
+          <LuMoon id="dark-icon"/>
+          <LuSunMoon id="light-icon"/>
+      </label>
       <Header/>
       <About/>
       <Skills/>
